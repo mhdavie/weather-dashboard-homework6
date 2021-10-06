@@ -10,6 +10,9 @@ Every time a user searches for a city, a list displaying that search information
 
 ## Links
 
+* ['Day-Planner GitHub'](https://github.com/mhdavie/weather-dashboard-homework6)
+* ['Day-Planner GitHub IO'](https://mhdavie.github.io/weather-dashboard-homework6/)
+
 
 
 ## User Story
