@@ -1,0 +1,46 @@
+.topPage {
+    background-color: #2e70b3d2;
+}
+
+ul {
+    list-style: none;
+}
+
+/*styles for li*/
+li {
+    justify-content: space-evenly;
+    text-align: left;
+    padding-left: 10px;
+    border: 3px solid rgb(15, 15, 15);
+    background-color: #2e70b3d2;
+
+}
+
+/* styles for card titles */
+
+.card-title {
+    font-size: 20px;
+}
+/*styles for img size*/
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/*styles for day forecast colors*/
+
+.fiveDayColor {
+    padding: 20px;
+    background-color: #2e70b3d2;
+    color: white;
+    float: left;
+    margin: 10px;
+    border: 3px solid rgb(15, 15, 15);
+}
+
+/*styles for current weather */
+
+.currentCard {
+    border: 3px solid rgb(15, 15, 15);
+    align-items:right;
+}
