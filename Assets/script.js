@@ -7,7 +7,7 @@ var apiKey = "a2be8081e76d81dc48560ed9a9eaec38";
 for (var i = 0; i < localStorage.length; i++) {
 
     var city = localStorage.getItem(i);
-    // console.log(localStorage.getItem("City"));
+    
     var cityName = $(".list-group").addClass("list-group-item");
 
     cityName.append("<li>" + city + "</li>");
@@ -22,9 +22,9 @@ searchButton.click(function () {
 
     var searchInput = $(".searchInput").val();
 
-    // Variable for current weather working 
+    // Variable for current weather 
     var urlCurrent = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial";
-    // Variable for 5 day forecast working
+    // Variable for 5 day forecast 
     var urlFiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "&Appid=" + apiKey + "&units=imperial";
 
     if (searchInput == "") {
@@ -42,6 +42,9 @@ searchButton.click(function () {
             var local = localStorage.setItem(keyCount, response.name);
             keyCount = keyCount + 1;
 
+
+            
+
             // Start Current Weather append 
             var currentCard = $(".currentCard").append("<div>").addClass("card-body");
             currentCard.empty();
@@ -50,7 +53,7 @@ searchButton.click(function () {
             currentCard.append(currentName);
   
   
-            // Adjust Date 
+// Adjust Date 
   var timeUTC = new Date(response.dt * 1000);
   currentName.append(response.name + " " + timeUTC.toLocaleDateString("en-US"));
   currentName.append(`<img src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png">`);
@@ -74,10 +77,10 @@ searchButton.click(function () {
                   method: "GET"
               }).then(function (response) {
   
-                  var currentUV = currentTemp.append("<p>" + "UV Index: " + response.value + "</p>").addClass("card-text");
+                  var currentUV = currentTemp.append("<p>" + "UV Index: " + response.value + "</p>").addClass("card-text").setAttribute("class","badge");
                   currentUV.addClass("UV");
                   currentTemp.append(currentUV);
-                  // currentUV.append("UV Index: " + response.value);
+                  
               });
   
           });
@@ -97,8 +100,12 @@ searchButton.click(function () {
                   var FiveDayTimeUTC1 = new Date(response.list[i].dt * 1000);
                   FiveDayTimeUTC1 = FiveDayTimeUTC1.toLocaleDateString("en-US");
   
-                  fiveDayDiv.append("<div class=fiveDayColor>" + "<p>" + FiveDayTimeUTC1 + "</p>" + `<img src="https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png">` + "<p>" + "Temperature: " + response.list[i].main.temp + "</p>" + "<p>" + "Humidity: " + response.list[i].main.humidity + "%" + "</p>" + "</div>");
+                  fiveDayDiv.append("<div class=fiveDayColor>" + "<p>" + FiveDayTimeUTC1 + "</p>" + 
+                  `<img src="https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}@2x.png">` + 
+                  "<p>" + "Temperature: " + response.list[i].main.temp + "</p>" + "<p>" + "Humidity: " + response.list[i].main.humidity + 
+                  "%" + "</p>" + "</div>");
   
+
   
               })
   
