@@ -15,8 +15,84 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+   
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+   
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+<!-- Start HTML Body -->
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body text-center bg-primary text-white">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </div>
+        <!-- First container-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-body text-center">
+
+                        <!-- Search input goes here -->
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body bg-light">
+                                <h6 class="card-subtitle mb-2 ">Search For A City</h6>
+                                <div class="input-group mb-3">
+
+                                    <!-- Input search form-->
+
+                                    <input type="text" class="form-control searchInput" placeholder="Enter City Name"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        
+                                        <button class="btn btn-outline-secondary bg-primary searchButton" type="button"
+                                            id="button-addon2"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                             <!-- list of city searched -->
+                                <ul class="list-group">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Appends current weather forecast-->
+                <div class="col mt-4 mr-5">
+                    <div class="card currentCard pb-2 pt-1">
+                        <h5 class="card-title mt-2 text-left">Current Forecast</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <div class="card pb-5 fiveDayCard pl-5">
+                            <!-- Appends 5 day forecast-->
+                            <h5 class="card-title mt-2 mr-5">5-Day Forecast </h5>
+                            <div class="row">
+                                <div class="col fiveDayOne">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+                        
 </body>
 
 </html>
+
