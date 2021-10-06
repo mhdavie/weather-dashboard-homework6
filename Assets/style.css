@@ -8,11 +8,12 @@ ul {
 
 /*styles for li*/
 li {
-    justify-content: space-evenly;
-    text-align: left;
+    justify-content: space-around;
+    text-align: center;
     padding-left: 10px;
     border: 3px solid rgb(15, 15, 15);
     background-color: #2e70b3d2;
+    color: white;
 
 }
 
@@ -38,9 +39,17 @@ img {
     border: 3px solid rgb(15, 15, 15);
 }
 
+.fiveDayCard {
+    border: 3px solid rgb(15, 15, 15);
+    text-align: center;
+}
+
 /*styles for current weather */
 
 .currentCard {
     border: 3px solid rgb(15, 15, 15);
     align-items:right;
+    color: black;
+    font-weight: bolder;
+
 }
