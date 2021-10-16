@@ -1,3 +1,4 @@
+
 .topPage {
     background-color: #2e70b3d2;
 }
@@ -24,25 +25,50 @@ li {
 }
 /*styles for img size*/
 img {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
 }
 
 /*styles for day forecast colors*/
 
-.fiveDayColor {
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.five-day-card{
     padding: 20px;
     background-color: #2e70b3d2;
     color: white;
     float: left;
     margin: 10px;
     border: 3px solid rgb(15, 15, 15);
+
+
 }
 
+.five-day-container .card-text {
+    margin-bottom: 15px;
+    padding: 10px 30px 5px 10px;
+}
+
+.five-day-card h3 {
+    margin: 5px;
+}
+
+
+.five-day-card img {
+    margin-left: 10%;
+}
 .fiveDayCard {
     border: 3px solid rgb(15, 15, 15);
     text-align: center;
 }
+
+
 
 /*styles for current weather */
 
@@ -53,3 +79,24 @@ img {
     font-weight: bolder;
 
 }
+
+button:hover {
+    background-color: #feca57;
+}
+
+
+
+.historyItems {
+    margin-top: 20px;
+}
+
+.historyItems:nth-child() {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+

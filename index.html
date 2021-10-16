@@ -33,65 +33,63 @@
             <h1>Weather Dashboard</h1>
         </div>
     </div>
+</div>
 
     <!--new search bar-->
-    <div class="container-fluid">
+
+    <div class="container">
         <div class="row mt-3">
             <div class="col-md-3 searcharea">
-                <h2 class="text-secondary">Find Location:</h2>
+                <h2 class="text-secondary">Search for a city:</h2>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="searchinput" type="search" aria-label="Search">
+                    <input type="text" class="form-control searchInput" type="search" aria-label="Search">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" id="searchbtn" type="submit">
+                        <button class="btn btn-primary searchBtn" type="submit">
                             <i class="material-icons">search</i>
                         </button>
                     </div>
-
-                    <!--Button for previous search-->
                 </div>
-                <div class="mt-5" id="prevSearches">
+            <div class="historyItems"></div>
+    </div>
+
+       </div>
+              
+        <div class="col-mt-4 mr-5">
+            <div class="forecast currentCard pb-2">
+                <div class="row">
+                    <h1 class="cityName mt-2 text-center">City Name</h1>
                     
+                    <h1 class="currentDate"></h1>
+                    <img class="weatherIcon"></img>
+                
+                <div class="row">
+                    <p class="temp">Temperature:</p>
                 </div>
-            </div>
-
-            <!--Weather for current Locacation-->
-
-            <div class="col-md-9">
-                <div class= "container" id= "currentForrecast">
-
+                <div class="row">
+                    <p class="humidity">Humidity:</p>
+                </div>
+                <div class="row">
+                    <p class="windSpeed">Wind Speed:</p>
+                </div>
+                <div class="row">
+                    <p class="uvIndex">UV Index:</p>
+                </div>
                 </div>
             </div>
         </div>
-    </div> 
+        </div>
 
+        <div class="container" 
 
- <!-- Search input goes here 
-
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body bg-light">
-                                <h6 class="card-subtitle mb-2 ">Find Location</h6>
-                                <div class="input-group mb-3">
-
-                                    <!-- Input search form--
-
-                                    <input type="text" class="form-control searchInput" placeholder="Enter City Name"
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        
-                                        <button class="btn btn-outline-secondary topPage searchButton" type="button"
-                                            id="button-addon2"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                             <!-- list of city searched --
-                                <ul class="list-group">
-                                    <div class= "button"></div>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="five-day-container">
+                <h1>5-Day Forecast:</h1>
+                <div class="card-row">
                 </div>
-                <!-- Appends current weather forecast--
+            </div>
+        </div>
+       </div>
+
+<!--                Appends current weather forecast--
 
                 <div class="col mt-4 mr-5">
                     <div class="card currentCard pb-2 ">
@@ -99,7 +97,7 @@
                     </div>
                 </div> -->
 
-                <!--Appends 5 day forecast-->
+                <!--Appends 5 day forecast
                 <div class="row">
                     <div class="col mt-4">
                         <div class="card pb-5 fiveDayCard pl-5">
