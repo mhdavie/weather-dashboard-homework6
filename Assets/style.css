@@ -25,8 +25,8 @@ li {
 }
 /*styles for img size*/
 img {
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 50%;
 }
 
 /*styles for day forecast colors*/
@@ -86,13 +86,7 @@ button:hover {
 
 
 
-.historyItems {
-    margin-top: 20px;
-}
 
-.historyItems:nth-child() {
-    margin-top: 20px;
-}
 
 
 
