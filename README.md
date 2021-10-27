@@ -39,4 +39,4 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions ](06-server-side-apis-homework-demo.png)
+(06-server-side-apis-homework-demo.png)
